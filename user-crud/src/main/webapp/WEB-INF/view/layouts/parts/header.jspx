@@ -1,0 +1,53 @@
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
+
+	<jsp:output omit-xml-declaration="yes" />
+
+	<div class="top">
+
+
+
+		<c:url var="icoHome" value="/view/images/ico-home.png"></c:url>
+		<c:url var="icoEmail" value="/view/images/ico-email.png"></c:url>
+		<c:url var="icoKey" value="/view/images/ico-key.png"></c:url>
+		<c:url var="icoEn" value="/view/images/ico-eng.png"></c:url>
+		<c:url var="icoEs" value="/view/images/ico-cast.png"></c:url>
+		<c:url var="icoGl" value="/view/images/ico-gal.png"></c:url>
+		<c:url var="logoTop" value="/view/images/logo-top.png"></c:url>
+
+		<div class="idiomas">
+			<div class="span1 eng" align="center">
+				<a href="#"> <img src="${icoEn }" title="ENGLISH" alt="ENGLISH" /> </a>
+			</div>
+			<div class="span1 gal" align="center">
+				<a href="#"> <img src="${icoGl }" title="GALEGO" alt="GALEGO" /> </a>
+			</div>
+			<div class="span1 cas" align="center">
+				<a href="#"> <img src="${icoEs }" title="CASTELLANO" alt="CASTELLANO" /> </a>
+			</div>
+		</div>
+
+
+		<div class="inicio">
+			<div class="span1 home">
+				<c:url var="home" value="/"></c:url>
+				<a href="${home }"><img src="${icoHome }" title="INICIO" alt="INICIO" /></a>
+			</div>
+			<div class="span1 mail" align="center">
+				<c:url var="email" value="mailto:contacto@avansig.com"></c:url>
+				<a href="${email }"><img src="${icoEmail }" title="CONTACTO" alt="CONTACTO" /></a>
+			</div>
+			<div class="span1 login">
+				<c:url var="login" value="/admin/login"></c:url>
+				<a href="${login }"><img src="${icoKey }" title="LOGIN" alt="LOGIN" /></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="logoTop">
+		<img src="${logoTop }" />
+	</div>
+
+</div>

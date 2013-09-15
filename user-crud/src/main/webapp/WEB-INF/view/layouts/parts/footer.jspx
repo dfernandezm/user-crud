@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:formularios="http://www.avansig.com/tags/formularios"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+	version="2.0">
+		
+	
+	
+	<div class="row-fluid footer">
+		<c:url var="icoMail" value="/view/images/ico-email.png"></c:url>
+		<c:url var="logoPie" value="/view/images/logo_pie.png"></c:url>
+		<c:url var="likeFB" value="/view/images/like_facebook.png"></c:url>
+	
+		<div class="span4">
+			<div class="row-fluid">
+				<div class="span12 footer newsletter">
+					<img src="${icoMail }"/>
+					<fmt:message key="footer.newsletter"/>				
+				</div>
+			</div>
+			
+			<div class="row-fluid">
+				<div class="span12 footer">
+					<input name="email" type="text" class="campo" id="email" size="70" autocomplete="off" />
+				</div>
+			</div>
+	
+		</div>
+		<div class="span4 footer">
+			<img src="${logoPie }" />
+		</div>
+		<div class="span4 footer">
+			<div class="row-fluid">
+				<div class="span4 footer legal"><a href="#"><fmt:message key="footer.aviso"/></a></div>
+				<div class="span4 footer legal"><a href="#"><fmt:message key="footer.privacidad"/></a></div>
+				<div class="span4 footer legal"><a href="#"><fmt:message key="footer.accesibilidad"/></a></div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12 footer">
+					<a href="#"><img src="${likeFB }"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</jsp:root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:sec="http://www.springframework.org/security/tags"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+	version="2.0">
+
+
+
+<!-- 
+
+* This JSP would render the update form, which will mainly consist of the same fields as the creation one, with hidden for id field and maybe
+some specific stuff for updating (other fields that can't be updated).
+
+* This similarity should be taken into account, and move the common fields to one JSP and include it would be better than replicate the fields. Other 
+approach could be just keep on JSP called 'createUpdate.jspx' and decide with a flag if use create or update fields.
+
+* A third approach, which might be more useful in other contexts, is to create a custom JSP tag with the form and parameterize the field inclusion and validation
+ depending upon the type of operation (which should be one of the parameters). Creating tag libraries is a clean and organized way of preventing a
+ JSP all over the project. 
+
+-->
+
+
+
+		
+</jsp:root>
+

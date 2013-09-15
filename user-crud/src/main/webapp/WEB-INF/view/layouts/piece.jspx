@@ -1,0 +1,15 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:tiles="http://tiles.apache.org/tags-tiles"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" 
+	version="2.0">
+	
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />  
+	
+	<!-- This is a layout for AJAX loaded content; its content has to be loaded inside an existing DOM element, dialog widget etc.
+	    
+	 -->
+	
+	<tiles:insertAttribute name="pieceContent" />
+	
+</jsp:root>

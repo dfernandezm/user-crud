@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+<!--  layout for AJAX loaded content -->
+ <definition name="piece" template="/WEB-INF/view/layouts/piece.jspx" /> 
+ 
+ <!--  layout for whole-page content -->
+ <definition name="user" template="/WEB-INF/view/layouts/user-ayout.jspx">
+    <put-attribute name="header" value="/WEB-INF/view/layouts/parts/header.jspx" /> 
+    <put-attribute name="menu" value="/WEB-INF/view/layouts/parts/menu.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/view/layouts/parts/footer.jspx" />
+  <!-- This is the gap to fill:  <put-attribute name="content" value="" /> -->
+  </definition>
+
+  
+
+
+
+</tiles-definitions>

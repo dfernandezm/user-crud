@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:tiles="http://tiles.apache.org/tags-tiles"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions" version="2.0">
+
+<!-- Javascript files inclusion should be done here, just to keep them all together; this JSP is later included in layouts -->
+
+	<c:url var="jsExt" value="/view/js/extjs/ext/ext-all-debug.js" />
+	<c:url var="app" value="/view/js/extjs/app.js" />
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><!-- comment --></script>
+	<script src="${jsExt}"><!-- comentario --></script>
+	<script src="${app}"><!-- comentario --></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// jQuery-based stuff initialization
+		});
+	</script>
+
+</jsp:root>

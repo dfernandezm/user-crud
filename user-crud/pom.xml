@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ <!-- Possible parent pom with generic dependencies
+  <parent>
+		<groupId>com.kuluvalley.genericweb</groupId>
+		<artifactId>generic-pom</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../generic-pom/pom.xml</relativePath>
+  </parent>	-->
+  
+  <groupId>com.kuluvalley.samples</groupId>
+  <artifactId>user-crud</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>User CRUD - Kulu Valley Example</name>
+  <url>http://www.kuluvalley.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <application.name>user-crud</application.name>
+    
+  </properties>
+
+
+  <dependencies>
+  
+  	<!-- specific dependencies here -->
+  	
+  </dependencies>
+
+<build>
+		<!-- resource filtering and plugin configuration goes here -->		
+</build>
+
+   <profiles>
+		<profile>
+			<id>development</id>	
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			
+			<properties>
+			<!-- properties for development -->
+			</properties>
+					
+			<build>
+				<!-- plugins for development -->
+			</build>			
+		</profile>	
+	</profiles>	
+</project>

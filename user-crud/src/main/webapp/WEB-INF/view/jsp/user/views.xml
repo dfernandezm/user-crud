@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	
+	<definition extends="user" name="create">
+		<put-attribute name="content"
+			value="/WEB-INF/view/jsp/user/create.jspx" />
+	</definition>
+	
+	<definition extends="user" name="list">
+		<put-attribute name="content"
+			value="/WEB-INF/view/jsp/user/list.jspx" />
+	</definition>
+	
+	<definition extends="user" name="create">
+		<put-attribute name="content"
+			value="/WEB-INF/view/jsp/user/create.jspx" />
+	</definition>
+	
+	
+	
+</tiles-definitions>
