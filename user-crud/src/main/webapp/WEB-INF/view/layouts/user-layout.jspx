@@ -4,7 +4,7 @@
 	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
 	version="2.0">  
 	
-	
+	<!-- Basic whole page layout for User Management -->
 	<jsp:output doctype-root-element="HTML" doctype-system="about:legacy-compat" />
 	
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />  
