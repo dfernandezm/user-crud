@@ -11,7 +11,7 @@ package com.kuluvalley.usercrud.model.util;
  */
 public abstract class GenericDaoSpecificVendor<T> implements GenericDao<T> {
 
-	@Override
+
 	public boolean exists(String propertyName, Object propertyValue) {
 		
 		// Get the generic parameter and perform a parameterized query to check if the id exists
@@ -19,7 +19,7 @@ public abstract class GenericDaoSpecificVendor<T> implements GenericDao<T> {
 		
 	}
 
-	@Override
+
 	public T getById(long id) {
 		
 		T u = null;

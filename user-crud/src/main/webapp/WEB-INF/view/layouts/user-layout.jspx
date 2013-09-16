@@ -16,7 +16,7 @@
 		<jsp:include page="includeCSS.jspx"/>
 		<jsp:include page="includeJS.jspx"/>
 		
-		
+		<!-- title should be a fmt message -->
 		<title>User Management</title>
 	</head>
 	
@@ -41,13 +41,10 @@
 		</div>
 		
 		<div class="container" id="containerFooter">			    
-			    <div class="row">
-			    	<div class="span12" id="spanCenter">
-			    		<tiles:insertAttribute name="footer" />
-			    	</div>
-			    </div>
-		</div> 
-	</div>
+			   <tiles:insertAttribute name="footer" />
+		</div>
+	</div> 
+	
 	
 	</body>
 </html>

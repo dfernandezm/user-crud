@@ -35,7 +35,6 @@ public class UserServiceImpl implements UserService {
 	 * Any checking such as duplication is performed here and informed through custom Exceptions the client has to handle 
 	 * 
 	 */
-	@Override
 	public void create(UserDTO user) throws DuplicateUserException {
 		// Code needed to create a user
 		
@@ -70,7 +69,7 @@ public class UserServiceImpl implements UserService {
 
 	}
 
-	@Override
+
 	public void delete(long userId) throws UserNotFoundException {
 		// --- Begin transaction
 		// checks whether a user with the provided id exists or not and inform -> rollback transaction
@@ -83,7 +82,7 @@ public class UserServiceImpl implements UserService {
 			userDao.delete(userId);
 	}
 
-	@Override
+
 	public UserDTO update(UserDTO user) throws UserNotFoundException, DuplicateUserException {
 		
 		// --- Begin transaction
@@ -111,7 +110,7 @@ public class UserServiceImpl implements UserService {
 		
 	}
 
-	@Override
+	
 	public UserDTO getUserById(long userId) throws UserNotFoundException {
 		
 		User user = userDao.getById(userId);
